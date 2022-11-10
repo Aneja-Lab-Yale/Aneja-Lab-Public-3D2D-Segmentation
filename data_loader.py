@@ -1,10 +1,9 @@
-# CapsNet Project
-# Data loader for 3D CapsNet and 3D U-Net models.
-# contains AdniData class that generates input/output paris for training.
+# 2D 2.5D 3D Segmentation Project
+# Data loader
 # Aneja Lab | Yale School of Medicine
 # Developed by Arman Avesta, MD
-# Created (3/30/21)
-# Updated (3/15/22)
+# Created (3/30/22)
+# Updated (11/5/22)
 
 # ----------------------------------------------------- Imports ----------------------------------------------------
 
@@ -184,7 +183,7 @@ def make_image_list(path_to_images_csv):
 # ---------------------------------------------- AdniDataset testing --------------------------------------------------
 
 if __name__ == "__main__":
-    from pre_processing.mri_slicer import imshow
+    from image_tools import imshow
 
     np.set_printoptions(precision=1, suppress=True)
     torch.set_printoptions(precision=1, sci_mode=False)
